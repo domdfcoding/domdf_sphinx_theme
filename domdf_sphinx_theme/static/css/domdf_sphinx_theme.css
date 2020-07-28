@@ -3385,7 +3385,7 @@ a .fa, a .wy-menu-vertical li span.toctree-expand, .wy-menu-vertical li a span.t
 
 .wy-tray-container {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
     z-index: 600
 }
@@ -3469,14 +3469,14 @@ button[disabled] {
     text-align: center;
     cursor: pointer;
     font-size: 100%;
-    padding: 6px 12px 8px 12px;
+    padding: 6px 12px 8px;
     color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #27AE60;
     text-decoration: none;
     font-weight: normal;
     font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
-    box-shadow: 0px 1px 2px -1px rgba(255, 255, 255, 0.5) inset, 0px -2px 0px 0px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 2px -1px rgba(255, 255, 255, 0.5) inset, 0 -2px 0 0 rgba(0, 0, 0, 0.1) inset;
     outline-none: false;
     vertical-align: middle;
     *display: inline;
@@ -3507,8 +3507,8 @@ button[disabled] {
 }
 
 .btn:active {
-    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset, 0px 2px 0px 0px rgba(0, 0, 0, 0.1) inset;
-    padding: 8px 12px 6px 12px
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 2px 0 0 rgba(0, 0, 0, 0.1) inset;
+    padding: 8px 12px 6px
 }
 
 .btn:visited {
@@ -3805,7 +3805,7 @@ legend {
 
 label {
     display: block;
-    margin: 0 0 .3125em 0;
+    margin: 0 0 .3125em;
     color: #333;
     font-size: 90%
 }
@@ -3912,13 +3912,13 @@ input, select, textarea {
 }
 
 .wy-control-group.wy-control-group-no-input .wy-control {
-    margin: 6px 0 0 0;
+    margin: 6px 0 0;
     font-size: 90%
 }
 
 .wy-control-no-input {
     display: inline-block;
-    margin: 6px 0 0 0;
+    margin: 6px 0 0;
     font-size: 90%
 }
 
@@ -4305,7 +4305,7 @@ input[type="radio"][disabled], input[type="checkbox"][disabled] {
     }
 
     .wy-form-aligned .wy-control {
-        margin: 1.5em 0 0 0
+        margin: 1.5em 0 0
     }
 
     .wy-form .wy-help-inline, .wy-form-message-inline, .wy-form-message {
@@ -4446,7 +4446,7 @@ input[type="radio"][disabled], input[type="checkbox"][disabled] {
 }
 
 .wy-table-horizontal td, .wy-table-horizontal th {
-    border-width: 0 0 1px 0;
+    border-width: 0 0 1px;
     border-bottom: 1px solid #e1e4e5
 }
 
@@ -4796,7 +4796,7 @@ html {
     display: inline-block;
     line-height: 32px;
     padding: 0 1.618em;
-    margin: 12px 0 0 0;
+    margin: 12px 0 0;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -5002,7 +5002,7 @@ html {
 
 .wy-side-nav-search img {
     display: block;
-    margin: auto auto .809em auto;
+    margin: auto auto .809em;
     height: 45px;
     width: 45px;
     background-color: #2980B9;
@@ -5195,7 +5195,7 @@ footer p {
 }
 
 footer span.commit code, footer span.commit .rst-content tt, .rst-content footer span.commit tt {
-    padding: 0px;
+    padding: 0;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
     font-size: 1em;
     background: none;
@@ -5492,7 +5492,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 }
 
 .rst-content div.figure p:last-child.caption {
-    margin-bottom: 0px
+    margin-bottom: 0
 }
 
 .rst-content div.figure.align-center {
@@ -5525,7 +5525,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 .rst-content pre.literal-block {
     white-space: pre;
     margin: 0;
-    padding: 12px 12px;
+    padding: 12px;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
     display: block;
     overflow: auto
@@ -5534,11 +5534,11 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 .rst-content pre.literal-block, .rst-content div[class^='highlight'] {
     border: 1px solid #e1e4e5;
     overflow-x: auto;
-    margin: 1px 0 24px 0
+    margin: 1px 0 24px
 }
 
 .rst-content pre.literal-block div[class^='highlight'], .rst-content div[class^='highlight'] div[class^='highlight'] {
-    padding: 0px;
+    padding: 0;
     border: none;
     margin: 0
 }
@@ -5550,7 +5550,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 .rst-content .linenodiv pre {
     border-right: solid 1px #e6e9ea;
     margin: 0;
-    padding: 12px 12px;
+    padding: 12px;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
     user-select: none;
     pointer-events: none
@@ -5559,7 +5559,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 .rst-content div[class^='highlight'] pre {
     white-space: pre;
     margin: 0;
-    padding: 12px 12px;
+    padding: 12px;
     display: block;
     overflow: auto
 }
@@ -5624,14 +5624,14 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 }
 
 .rst-content .line-block {
-    margin-left: 0px;
+    margin-left: 0;
     margin-bottom: 24px;
     line-height: 24px
 }
 
 .rst-content .line-block .line-block {
     margin-left: 24px;
-    margin-bottom: 0px
+    margin-bottom: 0
 }
 
 .rst-content .topic-title {
@@ -5645,12 +5645,12 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 
 .rst-content .align-right {
     float: right;
-    margin: 0px 0px 24px 24px
+    margin: 0 0 24px 24px
 }
 
 .rst-content .align-left {
     float: left;
-    margin: 0px 24px 24px 0px
+    margin: 0 24px 24px 0
 }
 
 .rst-content .align-center {

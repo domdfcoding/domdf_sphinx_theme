@@ -28,7 +28,7 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 	  - |license| |language| |requires| |pre_commit|
 
 .. |docs| image:: https://img.shields.io/readthedocs/domdf_sphinx_theme/latest?logo=read-the-docs
-	:target: https://domdf_sphinx_theme.readthedocs.io/en/latest/?badge=latest
+	:target: https://domdf_sphinx_theme.readthedocs.io/en/latest
 	:alt: Documentation Build Status
 
 .. |docs_check| image:: https://github.com/domdfcoding/domdf_sphinx_theme/workflows/Docs%20Check/badge.svg

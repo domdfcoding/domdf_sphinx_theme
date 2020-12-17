@@ -19,7 +19,7 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 	* - Docs
 	  - |docs| |docs_check|
 	* - Tests
-	  - |travis| |actions_windows| |actions_macos| |codefactor| |pre_commit_ci|
+	  - |actions_linux| |actions_windows| |actions_macos| |codefactor| |pre_commit_ci|
 	* - PyPI
 	  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
 	* - Activity
@@ -35,16 +35,16 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 	:target: https://github.com/domdfcoding/domdf_sphinx_theme/actions?query=workflow%3A%22Docs+Check%22
 	:alt: Docs Check Status
 
-.. |travis| image:: https://github.com/domdfcoding/domdf_sphinx_theme/workflows/Linux%20Tests/badge.svg
-	:target: https://github.com/domdfcoding/domdf_sphinx_theme/actions?query=workflow%3A%22Linux+Tests%22
+.. |actions_linux| image:: https://github.com/domdfcoding/domdf_sphinx_theme/workflows/Linux/badge.svg
+	:target: https://github.com/domdfcoding/domdf_sphinx_theme/actions?query=workflow%3A%22Linux%22
 	:alt: Linux Test Status
 
-.. |actions_windows| image:: https://github.com/domdfcoding/domdf_sphinx_theme/workflows/Windows%20Tests/badge.svg
-	:target: https://github.com/domdfcoding/domdf_sphinx_theme/actions?query=workflow%3A%22Windows+Tests%22
+.. |actions_windows| image:: https://github.com/domdfcoding/domdf_sphinx_theme/workflows/Windows/badge.svg
+	:target: https://github.com/domdfcoding/domdf_sphinx_theme/actions?query=workflow%3A%22Windows%22
 	:alt: Windows Test Status
 
-.. |actions_macos| image:: https://github.com/domdfcoding/domdf_sphinx_theme/workflows/macOS%20Tests/badge.svg
-	:target: https://github.com/domdfcoding/domdf_sphinx_theme/actions?query=workflow%3A%22macOS+Tests%22
+.. |actions_macos| image:: https://github.com/domdfcoding/domdf_sphinx_theme/workflows/macOS/badge.svg
+	:target: https://github.com/domdfcoding/domdf_sphinx_theme/actions?query=workflow%3A%22macOS%22
 	:alt: macOS Test Status
 
 .. |requires| image:: https://requires.io/github/domdfcoding/domdf_sphinx_theme/requirements.svg?branch=master

@@ -31,11 +31,11 @@ repos:
       args:
        - --allow-git
     - id: check-docstring-first
-      exclude: ^(doc-source/conf|__pkginfo__|make_conda_recipe|setup|tests/.*)\.py$
+      exclude: ^(doc-source/conf|__pkginfo__|setup|tests/.*)\.py$
     - id: bind-requirements
 
  - repo: https://github.com/domdfcoding/flake8-dunder-all
-   rev: v0.1.5
+   rev: v0.1.7
    hooks:
     - id: ensure-dunder-all
       files: ^domdf_sphinx_theme/.*\.py$
@@ -54,7 +54,7 @@ repos:
     - id: rst-inline-touching-normal
 
  - repo: https://github.com/asottile/pyupgrade
-   rev: v2.10.0
+   rev: v2.12.0
    hooks:
     - id: pyupgrade
       args:
@@ -68,13 +68,13 @@ repos:
     - id: forbid-crlf
 
  - repo: https://github.com/repo-helper/formate
-   rev: v0.4.2
+   rev: v0.4.3
    hooks:
     - id: formate
-      exclude: ^(doc-source/conf|__pkginfo__|make_conda_recipe|setup)\.(_)?py$
+      exclude: ^(doc-source/conf|__pkginfo__|setup)\.(_)?py$
 
  - repo: https://github.com/domdfcoding/dep_checker
-   rev: v0.4.1
+   rev: v0.6.2
    hooks:
     - id: dep_checker
       args:

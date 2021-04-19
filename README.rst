@@ -25,7 +25,7 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 	* - Activity
 	  - |commits-latest| |commits-since| |maintained| |pypi-downloads|
 	* - QA
-	  - |codefactor| |actions_flake8| |actions_mypy| |pre_commit_ci|
+	  - |codefactor| |actions_flake8| |actions_mypy|
 	* - Other
 	  - |license| |language| |requires|
 
@@ -102,10 +102,6 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/domdf_sphinx_theme
 	:target: https://pypi.org/project/domdf_sphinx_theme/
 	:alt: PyPI - Downloads
-
-.. |pre_commit_ci| image:: https://results.pre-commit.ci/badge/github/domdfcoding/domdf_sphinx_theme/master.svg
-	:target: https://results.pre-commit.ci/latest/github/domdfcoding/domdf_sphinx_theme/master
-	:alt: pre-commit.ci status
 
 .. end shields
 

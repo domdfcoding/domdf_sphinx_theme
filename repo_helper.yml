@@ -11,10 +11,14 @@ short_desc: "Customised 'sphinx_rtd_theme' used by my Python projects."
 
 enable_conda: false
 enable_tests: false
+use_whey: True
+sphinx_html_theme: domdf_sphinx_theme
 
 manifest_additional:
- - "recursive-include domdf_sphinx_theme *.*"
- - "recursive-exclude domdf_sphinx_theme .*.swp"
+ - "recursive-include domdf_sphinx_theme css/*.css"
+ - "recursive-include domdf_sphinx_theme js/*.js"
+ - "recursive-include domdf_sphinx_theme *.html"
+ - "include domdf_sphinx_theme/theme.conf"
 
 # Versions to run tests for
 python_versions:
@@ -41,9 +45,6 @@ classifiers:
 exclude_files:
  - conf
  - rtfd
-
-sphinx_html_theme: domdf_sphinx_theme
-use_whey: true
 
 keywords:
  - sphinx

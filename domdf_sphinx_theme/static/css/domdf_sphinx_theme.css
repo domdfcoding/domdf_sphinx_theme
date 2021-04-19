@@ -6080,3 +6080,8 @@ div.highlight {
 /*    width: 100%;*/
 /*    z-index: 1000000;*/
 /*}*/
+
+/* Disables wrapping in autosummary tables */
+table.longtable.docutils tbody tr td p {
+    white-space: normal;
+}

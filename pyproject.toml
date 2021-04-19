@@ -9,9 +9,11 @@ description = "Customised 'sphinx_rtd_theme' used by my Python projects."
 readme = "README.rst"
 keywords = [ "sphinx", "sphinx-theme", "documentation",]
 dynamic = [ "requires-python", "classifiers", "dependencies",]
+
 [[project.authors]]
 email = "dominic@davis-foster.co.uk"
 name = "Dominic Davis-Foster"
+
 
 [project.license]
 file = "LICENSE"
@@ -23,6 +25,7 @@ Homepage = "https://github.com/domdfcoding/domdf_sphinx_theme"
 Documentation = "https://domdf_sphinx_theme.readthedocs.io/en/latest"
 
 [tool.importcheck]
+always = [ "domdf_sphinx_theme",]
 
 [tool.whey]
 base-classifiers = [
@@ -43,7 +46,16 @@ python-versions = [ "3.6", "3.7", "3.8", "3.9",]
 python-implementations = [ "CPython",]
 platforms = [ "Windows", "macOS", "Linux",]
 license-key = "MIT"
-additional-files = [ "recursive-include domdf_sphinx_theme *.*", "recursive-exclude domdf_sphinx_theme .*.swp",]
+additional-files = [
+    "recursive-include domdf_sphinx_theme css/*.css",
+    "recursive-include domdf_sphinx_theme js/*.js",
+    "recursive-include domdf_sphinx_theme *.html",
+    "include domdf_sphinx_theme/theme.conf",
+]
+
+[tool.mkrecipe]
+conda-channels = [ "domdfcoding",]
+extras = "all"
 
 [project.entry-points."sphinx.html_themes"]
 domdf_sphinx_theme = "domdf_sphinx_theme"

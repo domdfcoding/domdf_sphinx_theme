@@ -24,9 +24,11 @@ Customised "sphinx_rtd_theme" used by my Python projects.
 #
 
 # stdlib
+import logging
 import os.path
 
 # 3rd party
+import sphinx.transforms
 import sphinx.writers.html5
 import sphinx_rtd_theme  # type: ignore
 from docutils import nodes
@@ -36,7 +38,6 @@ from sphinx.application import Sphinx
 
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2020 Dominic Davis-Foster"
-
 __license__: str = "MIT License"
 __version__: str = "21.0.0"
 __email__: str = "dominic@davis-foster.co.uk"
@@ -44,6 +45,29 @@ __email__: str = "dominic@davis-foster.co.uk"
 __version_full__ = __version__
 
 __all__ = ["setup", "HTML5Translator"]
+
+logger = logging.getLogger(__name__)
+
+
+class FilterSystemMessages(sphinx.transforms.FilterSystemMessages):
+	"""
+	Filter system messages from a doctree.
+	"""
+
+	default_priority = 1024
+
+	def apply(self, **kwargs) -> None:
+		filterlevel = 2 if self.config.keep_warnings else 5
+		for node in self.document.traverse(nodes.system_message):
+			if node["level"] < filterlevel:
+				logger.debug("%s [filtered system message]", node.astext())
+				node.parent.remove(node)
+
+				if (
+						isinstance(node.parent, nodes.paragraph) and len(node.parent.children) == 1
+						and isinstance(node.parent.children[0], nodes.paragraph)
+						):
+					node.parent.children = node.parent.children[0].children
 
 
 class HTML5Translator(sphinx.writers.html5.HTML5Translator):
@@ -113,6 +137,7 @@ def setup(app: Sphinx):
 		app.add_html_theme("domdf_sphinx_theme", theme_path)
 
 	app.set_translator("html", HTML5Translator, override=True)
+	app.add_transform(FilterSystemMessages)
 
 	return {
 			"version": __version__,

@@ -57,8 +57,8 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 	:target: https://github.com/domdfcoding/domdf_sphinx_theme/actions?query=workflow%3A%22mypy%22
 	:alt: mypy status
 
-.. |requires| image:: https://requires.io/github/domdfcoding/domdf_sphinx_theme/requirements.svg?branch=master
-	:target: https://requires.io/github/domdfcoding/domdf_sphinx_theme/requirements/?branch=master
+.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/domdf_sphinx_theme/badge.svg
+	:target: https://dependency-dash.herokuapp.com/github/domdfcoding/domdf_sphinx_theme/
 	:alt: Requirements Status
 
 .. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/domdf_sphinx_theme?logo=codefactor
@@ -96,7 +96,7 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 	:target: https://github.com/domdfcoding/domdf_sphinx_theme/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2021
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2022
 	:alt: Maintenance
 
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/domdf_sphinx_theme

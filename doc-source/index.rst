@@ -5,6 +5,7 @@ domdf_sphinx_theme
 .. start short_desc
 
 .. documentation-summary::
+	:meta:
 
 .. end short_desc
 
@@ -59,7 +60,8 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 		:workflow: mypy
 		:alt: mypy status
 
-	.. |requires| requires-io-shield::
+	.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/domdf_sphinx_theme/badge.svg
+		:target: https://dependency-dash.herokuapp.com/github/domdfcoding/domdf_sphinx_theme/
 		:alt: Requirements Status
 
 	.. |codefactor| codefactor-shield::
@@ -101,7 +103,7 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 		:last-commit:
 		:alt: GitHub last commit
 
-	.. |maintained| maintained-shield:: 2021
+	.. |maintained| maintained-shield:: 2022
 		:alt: Maintenance
 
 	.. |pypi-downloads| pypi-shield::
@@ -166,6 +168,6 @@ Changes include:
 
 	View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
 
-	`Browse the GitHub Repository <https://github.com/domdfcoding/domdf_sphinx_theme>`__
+	:github:repo:`Browse the GitHub Repository <domdfcoding/domdf_sphinx_theme>`
 
 .. end links

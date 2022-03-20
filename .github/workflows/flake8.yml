@@ -4,6 +4,11 @@ name: Flake8
 
 on:
   push:
+    branches-ignore:
+      - 'repo-helper-update'
+      - 'pre-commit-ci-update-config'
+      - 'imgbot'
+  pull_request:
 
 permissions:
   contents: read
@@ -42,4 +47,4 @@ jobs:
 
       - name: "Run Flake8"
         if: steps.changes.outputs.code == 'true'
-        run: "python -m tox -e lint -- --format github"
+        run: "python -m tox -e lint -s false -- --format github"

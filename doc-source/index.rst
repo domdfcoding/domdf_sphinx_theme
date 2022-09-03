@@ -60,8 +60,8 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 		:workflow: mypy
 		:alt: mypy status
 
-	.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/domdf_sphinx_theme/badge.svg
-		:target: https://dependency-dash.herokuapp.com/github/domdfcoding/domdf_sphinx_theme/
+	.. |requires| image:: https://dependency-dash.repo-helper.uk/github/domdfcoding/domdf_sphinx_theme/badge.svg
+		:target: https://dependency-dash.repo-helper.uk/github/domdfcoding/domdf_sphinx_theme/
 		:alt: Requirements Status
 
 	.. |codefactor| codefactor-shield::

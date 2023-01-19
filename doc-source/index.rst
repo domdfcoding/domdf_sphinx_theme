@@ -96,7 +96,7 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 		:alt: GitHub top language
 
 	.. |commits-since| github-shield::
-		:commits-since: v22.1.2
+		:commits-since: v23.0.0
 		:alt: GitHub commits since tagged version
 
 	.. |commits-latest| github-shield::

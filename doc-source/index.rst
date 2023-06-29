@@ -33,7 +33,7 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 		  - |license| |language| |requires|
 
 	.. |docs| rtfd-shield::
-		:project: domdf_sphinx_theme
+		:project: domdf-sphinx-theme
 		:alt: Documentation Build Status
 
 	.. |docs_check| actions-shield::

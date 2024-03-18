@@ -44,4 +44,4 @@ known_third_party = [
     "sphinx",
     "sphinx_rtd_theme",
 ]
-known_first_party = "domdf_sphinx_theme"
+known_first_party = [ "domdf_sphinx_theme",]

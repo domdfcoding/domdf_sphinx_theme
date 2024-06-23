@@ -91,6 +91,8 @@
     {%- endif %}
     {%- if hasdoc('copyright') %}
     <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}" />
+    {%- elif hasdoc('license') %}
+    <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('license') }}" />
     {%- endif %}
     {%- if next %}
     <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}" />

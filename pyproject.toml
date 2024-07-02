@@ -160,3 +160,6 @@ order = 10
 [tool.dependency-dash."doc-source/requirements.txt"]
 order = 30
 include = false
+
+[tool.dep_checker]
+allowed_unused = [ "sphinxcontrib_jquery",]

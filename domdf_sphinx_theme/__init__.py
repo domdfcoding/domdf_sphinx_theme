@@ -144,6 +144,7 @@ def setup(app: Sphinx):
 
 	app.set_translator("html", HTML5Translator, override=True)
 	app.add_transform(FilterSystemMessages)
+	app.setup_extension("sphinxcontrib.jquery")
 
 	return {
 			"version": __version__,

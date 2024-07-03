@@ -66,6 +66,16 @@ latex_elements = {
 		}
 
 
+import sphinx
+if sphinx.version_info >= (5,2):
+	from sphinx.builders.latex.transforms import LaTeXFootnoteVisitor
+	def get_footnote_by_reference(self, node):
+		docname = node['docname']
+		for footnote in self.footnotes:
+			if docname == footnote['docname'] and footnote['ids'][0] == node['refid']:
+				return footnote
+	LaTeXFootnoteVisitor.get_footnote_by_reference = get_footnote_by_reference
+
 def setup(app):
 	# 3rd party
 	from sphinx_toolbox.latex import better_header_layout

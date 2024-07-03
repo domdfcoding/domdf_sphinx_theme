@@ -1,0 +1,2 @@
+# Type stubs
+git+https://github.com/domdfcoding/docutils-stubs@docutils-16

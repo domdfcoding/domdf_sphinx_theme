@@ -26,13 +26,14 @@ Customised "sphinx_rtd_theme" used by my Python projects.
 # stdlib
 import logging
 import os.path
+from typing import Any, Dict
 
 # 3rd party
 import sphinx.transforms
 import sphinx.writers.html5
-import sphinx_rtd_theme  # type: ignore
-from docutils import nodes  # type: ignore
-from docutils.nodes import Element  # type: ignore
+import sphinx_rtd_theme  # type: ignore[import-untyped]
+from docutils import nodes
+from docutils.nodes import Element
 from sphinx import addnodes
 from sphinx.application import Sphinx
 
@@ -82,9 +83,9 @@ class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 
 		atts = {}
 
-		old_compact_simple = self.compact_simple  # type: ignore
-		self.context.append((self.compact_simple, self.compact_p))  # type: ignore
-		self.compact_p = None
+		old_compact_simple = self.compact_simple
+		self.context.append((self.compact_simple, self.compact_p))
+		self.compact_p = None  # type: ignore[assignment]
 		self.compact_simple = self.is_compactable(node)
 
 		classes = []
@@ -92,7 +93,7 @@ class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 		if self.compact_simple and not old_compact_simple:
 			classes.append("simple")
 
-		if any(len(child) > 1 for child in node):
+		if any(len(child) > 1 for child in node):  # type: ignore[arg-type]
 			classes.append("expanded")
 
 		if classes:
@@ -100,7 +101,7 @@ class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 
 		self.body.append(self.starttag(node, "ul", **atts))
 
-	def visit_enumerated_list(self, node):  # noqa: D102
+	def visit_enumerated_list(self, node: Element) -> None:  # noqa: D102
 		atts = {}
 		classes = []
 
@@ -113,7 +114,7 @@ class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 		if self.is_compactable(node):
 			classes.append("simple")
 
-		if any(len(child) > 1 for child in node):
+		if any(len(child) > 1 for child in node):  # type: ignore[arg-type]
 			classes.append("expanded")
 
 		if classes:
@@ -121,14 +122,14 @@ class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 
 		self.body.append(self.starttag(node, "ol", **atts))
 
-	def visit_desc_name(self, node: addnodes.desc_name):  # noqa: D102
+	def visit_desc_name(self, node: addnodes.desc_name) -> None:  # type: ignore[override]  # noqa: D102
 		self.body.append(self.starttag(node, "code", '', CLASS="sig-name descname"))
 
-	def depart_desc_name(self, node: addnodes.desc_name):  # noqa: D102
+	def depart_desc_name(self, node: addnodes.desc_name) -> None:  # type: ignore[override]  # noqa: D102
 		self.body.append("</code>")
 
 
-def setup(app: Sphinx):
+def setup(app: Sphinx) -> Dict[str, Any]:
 	"""
 	Setup Sphinx extension.
 
@@ -145,6 +146,13 @@ def setup(app: Sphinx):
 	app.set_translator("html", HTML5Translator, override=True)
 	app.add_transform(FilterSystemMessages)
 	app.setup_extension("sphinxcontrib.jquery")
+
+	# From https://github.com/readthedocs/sphinx_rtd_theme/pull/1448
+	# However, we need to call the extension's callback since setup_extension doesn't do it
+	# See: https://github.com/sphinx-contrib/jquery/issues/23
+	# 3rd party
+	from sphinxcontrib.jquery import add_js_files  # type: ignore[import-untyped]  # nodep  # TODO
+	add_js_files(app, app.config)
 
 	return {
 			"version": __version__,

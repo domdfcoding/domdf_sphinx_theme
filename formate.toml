@@ -39,6 +39,7 @@ known_third_party = [
     "requests",
     "sphinx",
     "sphinx_rtd_theme",
+    "sphinxcontrib_jquery",
 ]
 known_first_party = [ "domdf_sphinx_theme",]
 

@@ -13,6 +13,7 @@ enable_conda: false
 enable_tests: false
 use_whey: True
 sphinx_html_theme: domdf_sphinx_theme
+mypy_version: 1.10.1
 
 manifest_additional:
  - "recursive-include domdf_sphinx_theme css/*.css"

@@ -44,7 +44,7 @@ base-classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Utilities",
 ]
-python-versions = [ "3.7", "3.8", "3.9", "3.10",]
+python-versions = [ "3.7", "3.8", "3.9", "3.10", "3.11", "3.12", "3.13",]
 python-implementations = [ "CPython",]
 platforms = [ "Windows", "macOS", "Linux",]
 license-key = "MIT"
@@ -162,4 +162,4 @@ order = 30
 include = false
 
 [tool.dep_checker]
-allowed_unused = [ "sphinxcontrib_jquery",]
+allowed_unused = [ "sphinxcontrib_jquery", "standard_imghdr",]

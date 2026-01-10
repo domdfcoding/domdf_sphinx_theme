@@ -96,11 +96,11 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 	:target: https://github.com/domdfcoding/domdf_sphinx_theme/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2025
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2026
 	:alt: Maintenance
 
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/domdf_sphinx_theme
-	:target: https://pypi.org/project/domdf_sphinx_theme/
+	:target: https://pypistats.org/packages/domdf_sphinx_theme
 	:alt: PyPI - Downloads
 
 .. end shields

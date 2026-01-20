@@ -123,6 +123,6 @@ To install with ``pip``:
 
 .. code-block:: bash
 
-	$ python -m pip install domdf_sphinx_theme
+	$ python -m pip install domdf-sphinx-theme
 
 .. end installation

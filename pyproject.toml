@@ -3,7 +3,7 @@ requires = [ "whey",]
 build-backend = "whey"
 
 [project]
-name = "domdf_sphinx_theme"
+name = "domdf-sphinx-theme"
 version = "24.1.1"
 description = "Customised 'sphinx_rtd_theme' used by my Python projects."
 readme = "README.rst"
@@ -54,6 +54,7 @@ additional-files = [
     "recursive-include domdf_sphinx_theme *.html",
     "include domdf_sphinx_theme/theme.conf",
 ]
+package = "domdf_sphinx_theme"
 
 [tool.sphinx-pyproject]
 github_username = "domdfcoding"

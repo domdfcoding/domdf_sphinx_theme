@@ -68,22 +68,22 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 		:alt: CodeFactor Grade
 
 	.. |pypi-version| pypi-shield::
-		:project: domdf_sphinx_theme
+		:project: domdf-sphinx-theme
 		:version:
 		:alt: PyPI - Package Version
 
 	.. |supported-versions| pypi-shield::
-		:project: domdf_sphinx_theme
+		:project: domdf-sphinx-theme
 		:py-versions:
 		:alt: PyPI - Supported Python Versions
 
 	.. |supported-implementations| pypi-shield::
-		:project: domdf_sphinx_theme
+		:project: domdf-sphinx-theme
 		:implementations:
 		:alt: PyPI - Supported Implementations
 
 	.. |wheel| pypi-shield::
-		:project: domdf_sphinx_theme
+		:project: domdf-sphinx-theme
 		:wheel:
 		:alt: PyPI - Wheel
 
@@ -107,7 +107,7 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 		:alt: Maintenance
 
 	.. |pypi-downloads| pypi-shield::
-		:project: domdf_sphinx_theme
+		:project: domdf-sphinx-theme
 		:downloads: month
 		:alt: PyPI - Downloads
 

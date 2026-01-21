@@ -65,20 +65,20 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 	:target: https://www.codefactor.io/repository/github/domdfcoding/domdf_sphinx_theme
 	:alt: CodeFactor Grade
 
-.. |pypi-version| image:: https://img.shields.io/pypi/v/domdf_sphinx_theme
-	:target: https://pypi.org/project/domdf_sphinx_theme/
+.. |pypi-version| image:: https://img.shields.io/pypi/v/domdf-sphinx-theme
+	:target: https://pypi.org/project/domdf-sphinx-theme/
 	:alt: PyPI - Package Version
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/domdf_sphinx_theme?logo=python&logoColor=white
-	:target: https://pypi.org/project/domdf_sphinx_theme/
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/domdf-sphinx-theme?logo=python&logoColor=white
+	:target: https://pypi.org/project/domdf-sphinx-theme/
 	:alt: PyPI - Supported Python Versions
 
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/domdf_sphinx_theme
-	:target: https://pypi.org/project/domdf_sphinx_theme/
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/domdf-sphinx-theme
+	:target: https://pypi.org/project/domdf-sphinx-theme/
 	:alt: PyPI - Supported Implementations
 
-.. |wheel| image:: https://img.shields.io/pypi/wheel/domdf_sphinx_theme
-	:target: https://pypi.org/project/domdf_sphinx_theme/
+.. |wheel| image:: https://img.shields.io/pypi/wheel/domdf-sphinx-theme
+	:target: https://pypi.org/project/domdf-sphinx-theme/
 	:alt: PyPI - Wheel
 
 .. |license| image:: https://img.shields.io/github/license/domdfcoding/domdf_sphinx_theme
@@ -99,8 +99,8 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 .. |maintained| image:: https://img.shields.io/maintenance/yes/2026
 	:alt: Maintenance
 
-.. |pypi-downloads| image:: https://img.shields.io/pypi/dm/domdf_sphinx_theme
-	:target: https://pypistats.org/packages/domdf_sphinx_theme
+.. |pypi-downloads| image:: https://img.shields.io/pypi/dm/domdf-sphinx-theme
+	:target: https://pypistats.org/packages/domdf-sphinx-theme
 	:alt: PyPI - Downloads
 
 .. end shields

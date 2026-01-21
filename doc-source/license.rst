@@ -7,4 +7,4 @@ License
 .. license-info:: MIT
 
 .. license::
-	:py: domdf_sphinx_theme
+	:py: domdf-sphinx-theme

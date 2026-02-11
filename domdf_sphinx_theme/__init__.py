@@ -40,7 +40,7 @@ from sphinx.application import Sphinx
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2020 Dominic Davis-Foster"
 __license__: str = "MIT License"
-__version__: str = "24.1.1"
+__version__: str = "26.0.0"
 __email__: str = "dominic@davis-foster.co.uk"
 
 __version_full__ = __version__

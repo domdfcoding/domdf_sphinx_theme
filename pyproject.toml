@@ -4,7 +4,7 @@ build-backend = "whey"
 
 [project]
 name = "domdf-sphinx-theme"
-version = "24.1.1"
+version = "26.0.0"
 description = "Customised 'sphinx_rtd_theme' used by my Python projects."
 readme = "README.rst"
 keywords = [ "documentation", "sphinx", "sphinx-theme",]

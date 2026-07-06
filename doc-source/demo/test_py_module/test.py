@@ -30,7 +30,6 @@ class Foo:
 
 	Here is a link to :py:meth:`capitalize`.
 	Here is a link to :py:meth:`__init__`.
-
 	"""
 
 	#: Doc comment for class attribute Foo.bar.
@@ -51,8 +50,7 @@ class Foo:
 		:type qux: string
 		:param spam: Spam me yes or no...
 		:type spam: bool
-
-		"""
+"""
 		#: Doc comment for instance attribute qux.
 		self.qux = 3
 
@@ -69,8 +67,7 @@ class Foo:
 		:param val2: Second number to add.
 		:type val2: int
 		:rtype: int
-
-		"""
+"""
 
 		return val1 + val2
 
@@ -80,8 +77,7 @@ class Foo:
 		:param myvalue: String to change
 		:type myvalue: string
 		:rtype: string
-
-		"""
+"""
 
 		return myvalue.upper()
 
